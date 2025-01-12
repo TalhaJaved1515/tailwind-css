@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+<head class="scroll-smooth	">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Numans&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sail&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</title> <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="scroll-smooth	" > 
+    <h1 class="text-4xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-8xl 2xl:text-9xl 2xl:bg-red-500     outline-slate-300	lg-w:text-2xl	 	text-center	mt-10 font-serif font-medium rounded-2xl	  transition-all	">HELLO ART</h1>
+    <div  class="flex 	justify-center	items-center	w-full	">
+        <div class="text-2xl border-dashed	 border-4 border-blue-400  h-100 py-3	px-3 ms-10 mt-10 text-wrap	w-11/12	 outline-none border-2 border-red-500 p-2		rounded-2xl	text-indigo-500	lg:text-6xl md:text-4xl sm:text-2xl xl:text-8xl 2xl:text-9xl  transition-all        font-numans font-normal       "contenteditable="true" id="div" > </div>
+    </div>
+    <!-- <img class="w-16 md:w-32 lg:w-48 max-w-96:w-11	" src="8.png"> -->
+    
+    <script>
+     const div = document.getElementById('div');
+     div.addEventListener('input',()=>{
+        console.log('hello');
+        localStorage.setItem('div', div.textContent);
+
+     })
+     window.addEventListener('load',()=>{
+        const saveddiv = localStorage.getItem('div');
+        if (saveddiv) {
+            div.textContent=saveddiv
+        }
+     })
+    </script>
+   
+</body>
+</html>
